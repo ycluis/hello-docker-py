@@ -28,7 +28,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/yourimagename:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/hello-docker-py:latest
 
     - name: Image digest
       run: echo "The image digest is ${{ steps.build-and-push.outputs.digest }}"
